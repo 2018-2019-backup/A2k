@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{3a5286d2-51ac-4ad4-909a-372b3eae2aba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\DB">
+      <UniqueIdentifier>{63edd6bb-37e2-408a-9d96-d41ab04cc604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Config">
+      <UniqueIdentifier>{c8fb471f-796f-49d1-a3e6-e64063da4206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\UNIcode">
+      <UniqueIdentifier>{afff0a35-6b42-4a26-9f40-90ad07d73249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectARX API">
+      <UniqueIdentifier>{a9d71b8e-5b51-49da-9ada-6f91c340bd71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectARX API\DWGMgr">
+      <UniqueIdentifier>{60d200e1-f359-45c4-afaf-d27c7245fcf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC">
+      <UniqueIdentifier>{14a95f87-a676-4f9b-872a-8a9f0bfd4f04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\Main UI">
+      <UniqueIdentifier>{6c24ad74-8ef6-4567-a798-662646c6a9da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\Substation Types">
+      <UniqueIdentifier>{5a478393-a0f0-4539-9f98-93d129c0c68e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\Substation Types\Kiosk">
+      <UniqueIdentifier>{ef4b31af-d201-4fa2-bdbf-8fe0b39cd796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\Substation Types\Pole">
+      <UniqueIdentifier>{10a19d9d-204d-4c2f-b6b2-8b15ee1e0407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Boiler Plate Codes">
+      <UniqueIdentifier>{065a428a-26aa-495b-a9d8-d59b7bd3a2e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Boiler Plate Codes\Resource Files">
+      <UniqueIdentifier>{606a6e4c-1e02-484e-a86e-00386c67ecfc}</UniqueIdentifier>
+      <Extensions>rc;ico;bmp;cur;jpg;gif</Extensions>
+    </Filter>
+    <Filter Include="DataStructure">
+      <UniqueIdentifier>{4d98a416-bf20-4eb0-8c7b-bcd2126525b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\Nested Calsses">
+      <UniqueIdentifier>{cae6eb6d-9e43-4881-a446-36ac43954fdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\Nested Calsses\SubstationInfo">
+      <UniqueIdentifier>{4392fb61-3146-4f26-afd2-cbaff99ab958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\Nested Calsses\HVConnectionsInfo">
+      <UniqueIdentifier>{d06ff187-22fe-4a7a-8be7-4fd7f5737327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\Nested Calsses\TransformerInfo">
+      <UniqueIdentifier>{f96a00ae-30f4-4a45-8faa-614b47dae3ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\Nested Calsses\LVConnectionsInfo">
+      <UniqueIdentifier>{35e45d78-4224-451c-a2c1-f8fd67ee80f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\Nested Calsses\LVConnectionsInfo\Nested Class">
+      <UniqueIdentifier>{16993a2f-276c-4968-9867-bcd9ba9d0731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin Model">
+      <UniqueIdentifier>{119cde16-1af7-4758-965e-7fd2a15c35ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SubstationData">
+      <UniqueIdentifier>{594473d3-5de9-4641-800e-88285cf10bb8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NSDatabaseMgr.cpp">
+      <Filter>Utilities\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="NSConfigFileMgr.cpp">
+      <Filter>Utilities\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="NSDWGMgr.cpp">
+      <Filter>ObjectARX API\DWGMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="LayOutSelDlg.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="NSMainSubstaionDlg.cpp">
+      <Filter>MFC\Main UI</Filter>
+    </ClCompile>
+    <ClCompile Include="NSSubstationDet_Kiosk.cpp">
+      <Filter>MFC\Substation Types\Kiosk</Filter>
+    </ClCompile>
+    <ClCompile Include="NSSubstationDet_PT.cpp">
+      <Filter>MFC\Substation Types\Pole</Filter>
+    </ClCompile>
+    <ClCompile Include="DocData.cpp">
+      <Filter>Boiler Plate Codes</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Boiler Plate Codes</Filter>
+    </ClCompile>
+    <ClCompile Include="Substation.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="SubstationInfo.cpp">
+      <Filter>DataStructure\Nested Calsses\SubstationInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="HVConnectionsInfo.cpp">
+      <Filter>DataStructure\Nested Calsses\HVConnectionsInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformerInfo.cpp">
+      <Filter>DataStructure\Nested Calsses\TransformerInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="LVConnectionsInfo.cpp">
+      <Filter>DataStructure\Nested Calsses\LVConnectionsInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Distributors.cpp">
+      <Filter>DataStructure\Nested Calsses\LVConnectionsInfo\Nested Class</Filter>
+    </ClCompile>
+    <ClCompile Include="acrxEntryPoint.cpp">
+      <Filter>Plugin Model</Filter>
+    </ClCompile>
+    <ClCompile Include="SubstationInternals.cpp">
+      <Filter>Plugin Model</Filter>
+    </ClCompile>
+    <ClCompile Include="SubStationData.cpp">
+      <Filter>SubstationData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\XPathParser.cpp">
+      <Filter>Utilities\DB</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NSDatabaseMgr.h">
+      <Filter>Utilities\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="nsconfigfilemgr.h">
+      <Filter>Utilities\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="NSDirectives.h">
+      <Filter>Utilities\UNIcode</Filter>
+    </ClInclude>
+    <ClInclude Include="NSDWGMgr.h">
+      <Filter>ObjectARX API\DWGMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="LayOutSelDlg.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="NSMainSubstaionDlg.h">
+      <Filter>MFC\Main UI</Filter>
+    </ClInclude>
+    <ClInclude Include="NSSubstationDet_Kiosk.h">
+      <Filter>MFC\Substation Types\Kiosk</Filter>
+    </ClInclude>
+    <ClInclude Include="NSSubstationDet_PT.h">
+      <Filter>MFC\Substation Types\Pole</Filter>
+    </ClInclude>
+    <ClInclude Include="DocData.h">
+      <Filter>Boiler Plate Codes</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Boiler Plate Codes</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Boiler Plate Codes\Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Substation.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="SubstationInfo.h">
+      <Filter>DataStructure\Nested Calsses\SubstationInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="HVConnectionsInfo.h">
+      <Filter>DataStructure\Nested Calsses\HVConnectionsInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformerInfo.h">
+      <Filter>DataStructure\Nested Calsses\TransformerInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="LVConnectionsInfo.h">
+      <Filter>DataStructure\Nested Calsses\LVConnectionsInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Distributors.h">
+      <Filter>DataStructure\Nested Calsses\LVConnectionsInfo\Nested Class</Filter>
+    </ClInclude>
+    <ClInclude Include="SubStationData.h">
+      <Filter>SubstationData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\XPathParser.h">
+      <Filter>Utilities\DB</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SubstationInternals.rc">
+      <Filter>Boiler Plate Codes\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
