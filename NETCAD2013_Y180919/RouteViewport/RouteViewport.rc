@@ -1,0 +1,206 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "DwgTools ObjectARX application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "DwgTools"
+            VALUE "LegalCopyright", "Copyright © 2002"
+            VALUE "OriginalFilename", "DwgTools.arx"
+            VALUE "ProductName", "DwgTools Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ROUTEVPORTS DIALOGEX 0, 0, 208, 175
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NETCAD 2018: Route Plan V1.0"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "New route",IDC_NEWROUTE,14,18,89,14
+    PUSHBUTTON      "Edit route",IDC_EDITROUTE,107,18,89,14,WS_DISABLED
+    COMBOBOX        IDC_RV_SHEETSIZE,53,70,55,90,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_RV_SCALE,137,71,54,77,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_RV_LENGTH,53,94,54,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RV_PICKLENGTH,"Button",BS_OWNERDRAW | WS_TABSTOP,110,94,17,14
+    EDITTEXT        IDC_RV_WIDTH,53,112,54,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RV_PICKWIDTH,"Button",BS_OWNERDRAW | WS_TABSTOP,110,112,17,14
+    EDITTEXT        IDC_RV_OVERLAP,53,129,54,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RV_PICKOVERLAP,"Button",BS_OWNERDRAW | WS_TABSTOP,110,129,17,14
+    DEFPUSHBUTTON   "OK",IDOK,43,153,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,153,50,14
+    LTEXT           "",IDC_STATIC_OBJSEL,33,34,160,8
+    RTEXT           "Pick points",IDC_STATIC,131,115,34,8
+    RTEXT           "Sheet size:",IDC_STATIC,11,72,38,8
+    RTEXT           "Scale:",IDC_STATIC,111,73,22,8
+    RTEXT           "Lap:",IDC_STATIC,34,132,15,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,88,194,1
+    LTEXT           "Width:",IDC_STATIC,27,116,22,8
+    GROUPBOX        "Specify route",IDC_STATIC,7,3,194,49
+    RTEXT           "Pick points",IDC_STATIC,131,97,34,8
+    LTEXT           "Length:",IDC_STATIC,23,97,26,8
+    GROUPBOX        "Settings",IDC_STATIC,7,56,192,94
+    RTEXT           "Pick points",IDC_STATIC,131,131,34,8
+    PUSHBUTTON      "Help...",IDHELP,151,153,50,14
+    ICON            144,IDC_STATIC_IMAGE,15,33,20,20,SS_REALSIZEIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ROUTEVPORTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ROUTEVPORTS DLGINIT
+BEGIN
+    IDC_RV_SCALE, 0x403, 6, 0
+0x3a31, 0x3532, 0x0030, 
+    IDC_RV_SCALE, 0x403, 6, 0
+0x3a31, 0x3035, 0x0030, 
+    IDC_RV_SCALE, 0x403, 7, 0
+0x3a31, 0x3031, 0x3030, "\000" 
+    IDC_RV_SCALE, 0x403, 7, 0
+0x3a31, 0x3032, 0x3030, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_INFO                BITMAP                  "res\\Info.bmp"
+
+IDB_SELECT              BITMAP                  "res\\Select.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_INFO                ICON                    "res\\icon3.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ROUTEVPORTS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "DwgTools"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
