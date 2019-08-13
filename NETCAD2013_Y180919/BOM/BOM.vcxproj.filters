@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9cf3d87c-6b50-4688-956e-9f0cc0533086}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;idl;odl</Extensions>
+    </Filter>
+    <Filter Include="Include Files">
+      <UniqueIdentifier>{9de5e289-f43b-4f5e-ad59-7b6404549b59}</UniqueIdentifier>
+      <Extensions>h;hh;hxx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{f9c52f66-a3ee-4fae-8713-92a6704be4d2}</UniqueIdentifier>
+      <Extensions>rc;ico;bmp;cur;jpg;gif</Extensions>
+    </Filter>
+    <Filter Include="Common Files">
+      <UniqueIdentifier>{472b8b07-84cc-43b2-b72c-9840a97af93f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="acrxEntryPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BOMCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BOMNotifyDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DocData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LegendInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\BalloonHelp.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DCSFloatEdit.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\JoinSegments.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ProjectUtils.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\QueryTbl.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ReadINI.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\XPathParser.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BOMNotifyDlg.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DocData.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutInfo.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LegendInfo.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BalloonHelp.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DCSFloatEdit.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Hherror.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\JoinSegments.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ProjectUtils.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\QueryTbl.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\XPathParser.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BOM.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Common\htmlhelp.lib">
+      <Filter>Common Files</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
