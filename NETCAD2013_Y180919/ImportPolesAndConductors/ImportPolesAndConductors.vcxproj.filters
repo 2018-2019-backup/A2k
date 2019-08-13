@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0f613d59-454e-409e-a3b1-64375998cc77}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;idl;odl</Extensions>
+    </Filter>
+    <Filter Include="Include Files">
+      <UniqueIdentifier>{bab117c8-5b36-473c-9b40-88d6d3a7a8a6}</UniqueIdentifier>
+      <Extensions>h;hh;hxx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{4c474b18-8674-4f6a-8f35-75b75103c94e}</UniqueIdentifier>
+      <Extensions>rc;ico;bmp;cur;jpg;gif</Extensions>
+    </Filter>
+    <Filter Include="Common Files">
+      <UniqueIdentifier>{c048c73c-c35e-421b-a762-f0e27ab9856c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="acrxEntryPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CableJoin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CircuitInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConductorInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConductorSpanInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DocData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportPoleDataDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportPolesAndConductors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OPFileInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\BalloonHelp.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DCSFloatEdit.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\JoinSegments.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ProjectUtils.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\QueryTbl.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ReadINI.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\XPathParser.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CableJoin.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CircuitInfo.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConductorInfo.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConductorSpanInfo.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpreadSheet.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DocData.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportPoleDataDlg.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InsertPolesAndConductorsDlg.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OPFileInfo.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BalloonHelp.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DCSFloatEdit.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Hherror.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\JoinSegments.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ProjectUtils.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\QueryTbl.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\XPathParser.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ImportPolesAndConductors.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Common\htmlhelp.lib">
+      <Filter>Common Files</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

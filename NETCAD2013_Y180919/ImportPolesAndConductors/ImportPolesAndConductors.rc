@@ -1,0 +1,176 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "DwgTools ObjectARX application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "DwgTools"
+            VALUE "LegalCopyright", "Copyright © 2002"
+            VALUE "OriginalFilename", "DwgTools.arx"
+            VALUE "ProductName", "DwgTools Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IMPORTPOLEDATA DIALOGEX 0, 0, 303, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NETCAD 2018: Import Pole and Conductors V1.0"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_IP_FILENAME,75,7,149,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_IP_BROWSE,227,7,18,14
+    COMBOBOX        IDC_IP_OFFSET,75,25,70,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_IP_OTHERVALUE,150,25,74,14,ES_AUTOHSCROLL | WS_DISABLED
+    COMBOBOX        IDC_IP_SIDE,75,42,70,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Import poles only",IDC_IP_POLEONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,44,71,10
+    DEFPUSHBUTTON   "Import",IDOK,247,7,50,14,WS_DISABLED
+    PUSHBUTTON      "Undo",IDC_UNDO,247,24,50,14
+    PUSHBUTTON      "Help...",IDHELP,247,80,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,247,41,50,14
+    CONTROL         "",IDC_IP_PROGRESS,"msctls_progress32",WS_BORDER,7,63,236,14
+    LTEXT           "",IDC_IP_STATICPROGRESS,249,64,46,8
+    LTEXT           "",IDC_STATIC_FILEHEADER,7,81,234,8
+    LTEXT           "",IDC_IP_STATICTEXT,7,98,289,8
+    LTEXT           "Select spreadsheet:",IDC_STATIC,7,8,65,8
+    LTEXT           "Spacing:",IDC_STATIC,44,27,28,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,58,241,1
+    LTEXT           "Road side:",IDC_STATIC,37,44,35,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_IMPORTPOLEDATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_IMPORTPOLEDATA DLGINIT
+BEGIN
+    IDC_IP_SIDE, 0x403, 5, 0
+0x654c, 0x7466, "\000" 
+    IDC_IP_SIDE, 0x403, 6, 0
+0x6952, 0x6867, 0x0074, 
+    IDC_IP_SIDE, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_IMPORTPOLEDATA AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "DwgTools"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
