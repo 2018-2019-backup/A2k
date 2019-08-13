@@ -1,0 +1,264 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "DwgTools ObjectARX application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "DwgTools"
+            VALUE "LegalCopyright", "Copyright © 2002"
+            VALUE "OriginalFilename", "DwgTools.arx"
+            VALUE "ProductName", "DwgTools Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DUCTS DIALOGEX 0, 0, 282, 377
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NETCAD 2018: Cross section V1.0"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COLS,41,18,27,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ROWS,98,18,27,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DUCT_STATUS,167,18,55,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Clear",IDC_CLEAR,227,17,40,14
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,66,252,68
+    EDITTEXT        IDC_DUCTS_NOTES1,261,157,6,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_DUCTS_NOTES2,261,173,6,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_DUCTS_NOTES3,261,189,6,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_DUCTS_NOTES4,261,206,6,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_DUCTS_DEPTH,198,226,69,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_DUCTS_WIDTH,198,244,69,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DUCT_COVERSDEPTH,198,261,69,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DUCT_COVERSTRIP,198,278,69,30,CBS_DROPDOWN | CBS_UPPERCASE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",IDC_DUCT_REFRESH,198,295,69,12
+    EDITTEXT        IDC_DUCTS_SECTION,176,330,17,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "Show reference",IDC_DUCTS_REFERENCE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,199,331,67,10
+    CONTROL         "Show trench",IDC_DUCT_DRAWTRENCH,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,137,317,56,10
+    PUSHBUTTON      "Draw coverage",IDC_DUCT_COVERAGE,7,355,62,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Draw section",IDC_DUCT_DRAWCROSSSECTION,102,355,62,14
+    PUSHBUTTON      "Help...",IDCHELP,224,355,50,14
+    PUSHBUTTON      "Close",IDCANCEL,86,355,6,14,NOT WS_VISIBLE
+    LTEXT           "Across:",IDC_STATIC,13,20,25,8
+    LTEXT           "Deep:",IDC_STATIC,76,20,20,8
+    LTEXT           "Specify no. of ""Across (Columns)"" && ""Deep (Rows)"", then double click  on any ",IDC_STATIC,13,43,249,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,38,258,1
+    GROUPBOX        "Trench",IDC_STATIC_TRENCH,7,215,268,135
+    LTEXT           "Depth:",IDC_STATIC,173,229,23,8
+    RTEXT           "Width:",IDC_STATIC_WIDTH,163,247,33,8
+    LTEXT           "Cover depth:",IDC_STATIC,152,264,44,8
+    LTEXT           "Cover strip:",IDC_STATIC,157,280,39,8
+    GROUPBOX        "Notes",IDC_STATIC,7,143,268,69
+    GROUPBOX        "Conduits and Cables",IDC_STATIC,7,3,268,136
+    RTEXT           "X Section:",IDC_STATIC,132,20,33,8
+    LTEXT           "Reference:",IDC_STATIC,137,332,37,8
+    LTEXT           "cell in the grid to  specify the conduit / cable for a cell.",IDC_STATIC,13,55,174,8
+    PUSHBUTTON      "Close",IDC_CLOSE,169,355,50,14
+    EDITTEXT        IDC_DUCTS_NOTES,14,154,253,54,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Show fill",IDC_DUCT_DRAWFILL,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,224,317,42,10
+    CONTROL         "",IDC_STATIC_PREVIEW,"Static",SS_BITMAP,14,226,122,95
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,152,311,117,1
+END
+
+IDD_CONDUIT DIALOGEX 0, 0, 205, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NETCAD 2018: Conduit and Cable data V1.0"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_TRENCH_STATUS,66,7,132,30,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CONDUIT,66,23,132,178,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CABLE,66,39,132,205,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CABLESTATUS,66,55,132,205,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,12,72,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,66,72,50,14
+    PUSHBUTTON      "Help...",IDHELP,148,72,50,14
+    RTEXT           "Conduit size:",IDC_STATIC,18,25,42,8
+    RTEXT           "Cable type:",IDC_STATIC,22,42,38,8
+    RTEXT           "Cross section is:",IDC_STATIC,7,9,53,8
+    RTEXT           "Cable status:",IDC_STATIC,16,57,44,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DUCTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 369
+    END
+
+    IDD_CONDUIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DUCTS DLGINIT
+BEGIN
+    IDC_COLS, 0x403, 2, 0
+0x0031, 
+    IDC_COLS, 0x403, 2, 0
+0x0032, 
+    IDC_COLS, 0x403, 2, 0
+0x0033, 
+    IDC_COLS, 0x403, 2, 0
+0x0034, 
+    IDC_COLS, 0x403, 2, 0
+0x0035, 
+    IDC_COLS, 0x403, 2, 0
+0x0036, 
+    IDC_COLS, 0x403, 2, 0
+0x0037, 
+    IDC_COLS, 0x403, 2, 0
+0x0038, 
+    IDC_ROWS, 0x403, 2, 0
+0x0031, 
+    IDC_ROWS, 0x403, 2, 0
+0x0032, 
+    IDC_ROWS, 0x403, 2, 0
+0x0033, 
+    IDC_ROWS, 0x403, 2, 0
+0x0034, 
+    IDC_ROWS, 0x403, 2, 0
+0x0035, 
+    0
+END
+
+IDD_CONDUIT DLGINIT
+BEGIN
+    IDC_TRENCH_STATUS, 0x403, 9, 0
+0x7250, 0x706f, 0x736f, 0x6465, "\000" 
+    IDC_TRENCH_STATUS, 0x403, 9, 0
+0x7845, 0x7369, 0x6974, 0x676e, "\000" 
+    IDC_TRENCH_STATUS, 0x403, 10, 0
+0x6e55, 0x6564, 0x6272, 0x726f, 0x0065, 
+    IDC_CABLESTATUS, 0x403, 9, 0
+0x7250, 0x706f, 0x736f, 0x6465, "\000" 
+    IDC_CABLESTATUS, 0x403, 9, 0
+0x7845, 0x7369, 0x6974, 0x676e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DUCTS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CONDUIT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "DwgTools"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
