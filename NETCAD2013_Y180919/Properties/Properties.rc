@@ -1,0 +1,176 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "EnergyAustralia"
+            VALUE "FileDescription", "DXF Translator for eCapture"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "DXFTrans"
+            VALUE "LegalCopyright", "Copyright © 2008, AEC Systems Pty Ltd"
+            VALUE "OriginalFilename", "DXFTrans.arx"
+            VALUE "ProductName", "DXF Translator"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPERTIES DIALOGEX 0, 0, 343, 235
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NET CAD: Object Properties V2.0"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_PROPS_OBJTYPE,54,6,282,311,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINEAR_INS,225,51,111,100,CBS_DROPDOWNLIST | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINEAR_CODE,225,98,111,100,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Draw ""Description"" text for selected objects",IDC_LINEAR_CHECK,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,56,168,156,10
+    PUSHBUTTON      "Apply Values",IDC_PROPS_APPLY,8,214,51,14
+    LTEXT           "Object types:",IDC_STATIC,7,9,45,8
+    LTEXT           "Use (Voltage):",IDC_LINEAR_LABEL_USE,5,53,47,8,NOT WS_VISIBLE
+    LTEXT           "Installation:",IDC_LINEAR_LABEL_INS,184,54,39,8,NOT WS_VISIBLE
+    LTEXT           "Code:",IDC_LINEAR_LABEL_CODE,203,100,20,8,NOT WS_VISIBLE
+    LTEXT           "Description:",IDC_LINEAR_LABEL_DESC,13,117,39,8,NOT WS_VISIBLE
+    LTEXT           "Name:",IDC_LINEAR_LABEL_NAME,30,100,22,8,NOT WS_VISIBLE
+    LTEXT           "Conductor attributes:",IDC_LINEAR_COND,7,35,83,9,NOT WS_VISIBLE
+    LTEXT           "Mandatory attributes:",IDC_LINEAR_MAND,7,79,83,9,NOT WS_VISIBLE
+    CONTROL         "",IDC_LINEAR_COND_LINE,"Static",SS_ETCHEDHORZ,81,39,255,1
+    CONTROL         "",IDC_LINEAR_MAND_LINE,"Static",SS_ETCHEDHORZ,82,83,254,1
+    PUSHBUTTON      "Reset selections",IDC_LINEAR_RESET,54,137,282,14
+    PUSHBUTTON      "Clear Values",IDC_PROPS_REMOVE,63,214,51,14
+    CONTROL         "Draw ""Name"" text for selected objects",IDC_LINEAR_CHECK2,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,56,184,139,10
+    PUSHBUTTON      "Help...",IDC_PROPS_HELP,285,214,51,14
+    PUSHBUTTON      "Close",IDCANCEL,230,214,51,14
+    PUSHBUTTON      "Select",IDC_PROPS_SELECT,118,214,51,14
+    PUSHBUTTON      "Regenerate",IDC_PROPS_REGEN,173,214,51,14
+    COMBOBOX        IDC_LINEAR_DESC,54,115,282,101,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINEAR_NAME,54,98,111,100,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINEAR_USE,56,51,111,100,CBS_DROPDOWNLIST | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PROPS_LIST,"{75C461D9-9588-415A-8D8F-4EA2430703B9}",WS_TABSTOP,7,29,329,169
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 228
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROPERTIES DLGINIT
+BEGIN
+    IDC_PROPS_LIST, 0x376, 73, 0
+0x0019, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0032, 0x0030, 
+0x0030, 0x0034, 0x0020, 0x004d, 0x0065, 0x0069, 0x0064, 0x0061, 0x006e, 
+0x0000, 0x0001, 0x330e, 0x0000, 0x1c6c, 0x0000, 0x0000, 0x0000, 0x0003, 
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "DXFTrans"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
