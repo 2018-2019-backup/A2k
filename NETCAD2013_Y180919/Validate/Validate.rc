@@ -1,0 +1,375 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "EnergyAustralia"
+            VALUE "FileDescription", "DXF Translator for eCapture"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "DXFTrans"
+            VALUE "LegalCopyright", "Copyright © 2008, AEC Systems Pty Ltd"
+            VALUE "OriginalFilename", "DXFTrans.arx"
+            VALUE "ProductName", "DXF Translator"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VALIDATE_OPTIONS DIALOGEX 0, 0, 186, 120
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NETCAD 2018: Validate V1.0"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Validate movement of blocks",IDC_MOVEMENT_BLOCKS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,27,107,10
+    CONTROL         "Validate movement of lines, arcs && polylines",IDC_MOVEMENT_OTHERS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,45,155,10
+    CONTROL         "Validate ""OFF"" layers and objects on them",IDC_EXCLUDE_OFF,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,63,151,10
+    DEFPUSHBUTTON   "OK",IDOK,18,99,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,99,50,14
+    PUSHBUTTON      "Help...",IDHELP,129,99,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,92,172,1
+    LTEXT           "Select additional validation options:",IDC_STATIC,7,7,114,8
+END
+
+IDD_VALIDATE_RESULTS DIALOGEX 0, 0, 563, 309
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NETCAD 2018: Validation Results V1.0"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_VALIDATE_TABS,"SysTabControl32",0x0,7,7,549,271
+    PUSHBUTTON      "Save report",IDC_SAVE_RESULTS,389,288,58,14
+    PUSHBUTTON      "Help...",IDHELP,506,288,50,14
+    PUSHBUTTON      "Close",IDCANCEL,451,288,50,14
+END
+
+IDD_VALIDATE_RESULTS_LAYERS DIALOGEX 0, 0, 540, 250
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LAYERS_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,21,469,222
+    PUSHBUTTON      "Fix selected",IDC_LAYERS_FIX,483,21,50,14
+    PUSHBUTTON      "Select all",IDC_LAYERS_SELECT_ALL,483,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,483,229,50,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "The list of layers which are non-standard or whose colour, line type or line weight are not as per the standards is shown below:",IDC_STATIC,7,8,408,8
+    PUSHBUTTON      "Clear all",IDC_LAYERS_CLEAR_ALL,483,57,50,14
+    PUSHBUTTON      "Accept",IDC_ERROR_ACCEPT,483,75,50,14
+END
+
+IDD_VALIDATE_RESULTS_OBJECTS DIALOGEX 0, 0, 540, 250
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_OBJECTS_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,21,469,222
+    PUSHBUTTON      "Fix selected",IDC_OBJECTS_FIX,483,21,50,14
+    PUSHBUTTON      "Select all",IDC_OBJECTS_SELECT_ALL,483,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,483,229,50,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "The list of objects that are not on their original layers in the current drawing is shown below (click on each item to zoom to its location):",IDC_STATIC,7,8,431,8
+    PUSHBUTTON      "Clear all",IDC_OBJECTS_CLEAR_ALL,483,57,50,14
+    PUSHBUTTON      "Accept",IDC_ERROR_ACCEPT,483,75,50,14
+END
+
+IDD_VALIDATE_RESULTS_BLOCKS DIALOGEX 0, 0, 540, 250
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_BLOCKS_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,21,469,222
+    PUSHBUTTON      "Cancel",IDCANCEL,483,229,50,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "The list of non-standard blocks in the current drawing is shown below (click on each item to zoom to its location):",IDC_STATIC,7,8,359,8
+    PUSHBUTTON      "Accept",IDC_ERROR_ACCEPT,483,75,50,14
+END
+
+IDD_VALIDATE_RESULTS_ATTRIBS DIALOGEX 0, 0, 540, 250
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "The list of blocks whose mandatory attributes are not filled in the current drawing is shown below (click on each item to zoom to its location):",IDC_STATIC,7,8,448,8
+    CONTROL         "",IDC_ATTRIBS_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,21,469,222
+    PUSHBUTTON      "Cancel",IDCANCEL,483,229,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Accept",IDC_ERROR_ACCEPT,483,75,50,14
+END
+
+IDD_VALIDATE_RESULTS_LAYER0 DIALOGEX 0, 0, 540, 250
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LAYER0_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,21,469,222
+    PUSHBUTTON      "Cancel",IDCANCEL,483,229,50,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "The list of objects present on layer ""0"" in the current drawing is shown below (click on each item to zoom to its location):",IDC_STATIC,7,8,384,8
+    PUSHBUTTON      "Accept",IDC_ERROR_ACCEPT,483,75,50,14
+END
+
+IDD_VALIDATE_RESULTS_MOVEMENT DIALOGEX 0, 0, 540, 250
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "The list of assets that have been moved in the current drawing is shown below (click on each item to zoom to its location):",IDC_STATIC,7,8,390,8
+    CONTROL         "",IDC_MOVEMENT_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,21,469,222
+    PUSHBUTTON      "Cancel",IDCANCEL,483,229,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Accept",IDC_ERROR_ACCEPT,483,75,50,14
+END
+
+IDD_VALIDATE_ACCEPT DIALOGEX 0, 0, 463, 48
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NETCAD 2018: Accept error V1.0"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_ACCEPT_REASON,67,26,327,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,406,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,406,26,50,14
+    LTEXT           "Error number:",IDC_STATIC,18,9,46,8
+    LTEXT           "Error type:",IDC_STATIC,175,9,36,8
+    LTEXT           "Reason for error:",IDC_STATIC,7,28,57,8
+    EDITTEXT        IDC_ACCEPT_ERRNO,67,7,75,14,ES_UPPERCASE | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ACCEPT_ERRTYPE,215,7,179,14,ES_UPPERCASE | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_VALIDATE_RESULTS_ACCEPT DIALOGEX 0, 0, 540, 250
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_ACCEPT_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,21,469,222
+    PUSHBUTTON      "Cancel",IDCANCEL,483,229,50,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "The list of errors that have been accepted is shown below (click on each item to zoom to its location):",IDC_STATIC,7,8,324,8
+    PUSHBUTTON      "Clear all",IDC_ACCEPT_CLEAR_ALL,483,57,50,14
+    PUSHBUTTON      "Select all",IDC_ACCEPT_SELECT_ALL,483,39,50,14
+    PUSHBUTTON      "Clear selected",IDC_ACCEPT_CLEAR,483,21,50,14
+END
+
+IDD_EXT_VALIDATE DIALOGEX 0, 0, 235, 216
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NETCAD 2018: External Drawing Validation V1.0"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_ESPNAME,93,7,135,188,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Validate blocks",IDC_EXT_BLOCKS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,48,63,10
+    CONTROL         "Rename blocks to EA standards",IDC_EXT_BLOCKS_RENAME,
+                    "Button",BS_AUTORADIOBUTTON,29,63,117,10
+    CONTROL         "Replace with EA standard blocks",IDC_EXT_BLOCKS_REPLACE,
+                    "Button",BS_AUTORADIOBUTTON,29,78,119,10
+    CONTROL         "Validate layers",IDC_EXT_LAYERS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,101,63,10
+    CONTROL         "Validate text styles",IDC_EXT_TEXTSTYLES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,119,77,10
+    CONTROL         "Validate line types",IDC_EXT_LINETYPES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,137,74,10
+    CONTROL         "Validate dimension styles",IDC_EXT_DIMSTYLES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,155,95,10
+    DEFPUSHBUTTON   "Validate",IDOK,70,195,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,124,195,50,14
+    PUSHBUTTON      "Help...",IDHELP,178,195,50,14
+    LTEXT           "External Service Provider:",IDC_STATIC,7,9,84,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,185,221,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,39,33,189,1
+    LTEXT           "Options:",IDC_STATIC,7,29,28,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_VALIDATE_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_VALIDATE_RESULTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 556
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 302
+    END
+
+    IDD_VALIDATE_RESULTS_LAYERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 533
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_VALIDATE_RESULTS_OBJECTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 533
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_VALIDATE_RESULTS_BLOCKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 533
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_VALIDATE_RESULTS_ATTRIBS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 533
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_VALIDATE_RESULTS_LAYER0, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 533
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_VALIDATE_RESULTS_MOVEMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 533
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_VALIDATE_ACCEPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 456
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 41
+    END
+
+    IDD_VALIDATE_RESULTS_ACCEPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 533
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_EXT_VALIDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_EXT_VALIDATE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VALIDATE_ACCEPT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VALIDATE_OPTIONS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VALIDATE_RESULTS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "DXFTrans"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
